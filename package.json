@@ -48,6 +48,7 @@
     "karma-phantomjs-launcher": "^0.1.4",
     "phantomjs": "^1.9.12",
     "yargs": "^3.5.4"
+<<<<<<< HEAD
   },
   "gitHead": "22e623a5ab867f2e1401bb9b810b9985a34755e9",
   "readme": "# Stateless Pager component\n[![NPM version][npm-image]][npm-url]\n[![Code Climate][cc-image]][cc-url]\n[![Build Status][travis-image]][travis-url]\n\n\n## Getting started\n### browserify\n```sh\nvar Pager = require( 'react-pager' );\n```\n\n### Global scripts\ndist/pager.min.js is prebuilded for using in global `<script>` tag.\n(It's used in JSFiddle demo).\n\n\n## Usage\n```\nvar Pager = require( 'react-pager' );\n\nvar PagerDemo = React.createClass({\n    getInitialState: function () {\n        return {\n            total:        11,\n            current:      7,\n            visiblePages: 3\n        };\n    },\n    \n    handlePageChanged: function ( newPage ) {\n        this.setState({ current : newPage });\n    },\n    \n    render: function() {\n        return (<Pager total={this.state.total}\n                       current={this.state.current}\n                       \n                       {/* Optional */}\n                       titles={{\n                           first:   'First',\n                           prev:    '\\u00AB',\n                           prevSet: '...',\n                           nextSet: '...',\n                           next:    '\\u00BB',\n                           last:    'Last'\n                       }}\n                       \n                       visiblePages={this.state.visiblePages}\n                       onPageChanged={this.handlePageChanged}/>);\n    }\n});\n\nReact.render(<PagerDemo />, document.body);\n```\n\n\n## How it looks like*\n```\nFirst | Prev | ... | 6 | 7 | 8 | 9 | ... | Next | Last\n```\n\n\\* Bootstrap 3.0 is required by default, but you can replace it with your own css.\n\n\n## Demo\n```shell\ngulp demo -p 8003 \n```\nor\n```shell\n./node_modules/.bin/gulp demo -p 8003\n```\n\n[JSFiddle](http://jsfiddle.net/azaviruha/69z2wepo/4060/)\n\n\n## Tests\n```sh\nnpm test\n```\n\n## Changelog\n### v1.1.1\n* Updated to React 0.13.\n* Updated local demo. \n\n### v1.1.0\n* Added `titles` property. See [demo](http://jsfiddle.net/azaviruha/kb3gN/10213/).\n* Improved building script.\n\n### v1.0.6\n* Fixed `<li class=\"undefined\" ..` in \"more\" and \"less\" buttons.\n* Added a few unit-tests.\n\n\n[npm-image]: http://img.shields.io/badge/npm-v1.1.1-green.svg\n[npm-url]: https://www.npmjs.org/package/react-pager\n[cc-image]: https://codeclimate.com/github/AZaviruha/pager/badges/gpa.svg\n[cc-url]: https://codeclimate.com/github/AZaviruha/pager\n[travis-image]: https://travis-ci.org/AZaviruha/pager.svg?branch=master\n[travis-url]: https://travis-ci.org/AZaviruha/pager\n",
@@ -58,4 +59,7 @@
   "_from": "git://github.com/lucknessbuaa/pager",
   "_resolved": "git://github.com/lucknessbuaa/pager#22e623a5ab867f2e1401bb9b810b9985a34755e9",
   "_fromGithub": true
+=======
+  }
+>>>>>>> origin/master
 }
